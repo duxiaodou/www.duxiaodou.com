@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WwwBadtudouCom</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/material-design-lite/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://cdn.bootcss.com/material-design-lite/1.3.0/material.min.js"></script>
+  </head>
+
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <%= render "shared/header" %>
+      <main class="mdl-layout__content">
+
+        <div class="page-content"><!-- Your content goes here -->
+          <%= yield %>
+      
+        </div>
+      </main>
+    
+    </div>
+  </body>
+</html>
