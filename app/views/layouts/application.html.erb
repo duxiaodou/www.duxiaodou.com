@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WwwBadtudouCom</title>
+    <title>杜小豆(BadTudou)</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -18,12 +18,12 @@
       <%= render "shared/header" %>
       <main class="mdl-layout__content">
 
-        <div class="page-content"><!-- Your content goes here -->
+        <div class="page-content">
           <%= yield %>
-      
         </div>
+      <%= render "shared/footer" %>
       </main>
-    
+      
     </div>
   </body>
 </html>

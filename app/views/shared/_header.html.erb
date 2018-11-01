@@ -1,42 +1,40 @@
 <header class="mdl-layout__header mdl-color--grey">
+	<div class="mdl-layout--large-screen-only mdl-layout__header-row">
+	</div>
 
-		<div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
+	<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
 
-        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>杜小豆(BadTudou)</h4>
+		<header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+		</header>
+		<div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+			<div class="mdl-card__supporting-text">
+				<h4><a href="<%= root_path %>"> 杜小豆(BadTudou)</a></h4>
                 如果每个人都是一颗小星球，逝去的亲友就是身边的暗物质。我愿能再见你，我知我再见不到你。但你的引力仍在。我感激我们的光锥曾彼此重叠，而你永远改变了我的星轨。
                 <br><br>
                 纵使再不能相见，你仍是我所在的星系未曾分崩离析的原因，是我宇宙之网的永恒组成。 -- <科学松鼠会>
-              </div>
-            </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1" data-upgraded=",MaterialButton,MaterialRipple">
-            <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
-          </section>
-
-		<div class="mdl-layout__header-row">
-			<div class="mdl-layout-spacer"></div>
-			<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
-				<label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
-					<i class="material-icons">help</i>
-				</label>
-				<div class="mdl-textfield__expandable-holder"></div>
-			</div>
-
-			<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
-				<label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
-					<i class="material-icons">bug_report</i>
-				</label>
-				<div class="mdl-textfield__expandable-holder"></div>
 			</div>
 		</div>
+	</section>
+	<div class="mdl-layout__header-row">
+		<div class="mdl-cell mdl-cell--1-col mdl-cell--1-col-tablet">
+		</div>
+		<div class="mdl-cell mdl-cell--10-col mdl-cell--10-col-tablet">
+			<%= render "shared/nav" %>
+		</div>
+		<div class="mdl-cell mdl-cell--1-col mdl-cell--1-col-tablet">
+			
+				<a href="<%= about_path %>">
+					<label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+						<i class="material-icons">help</i>
+					</label>
+				</a>
+			
+				<a href="<%= about_path %>">
+					<label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+						<i class="material-icons">bug_report</i>
+					</label>
+				</a>
+		</div>
+	</div>
 
-	
-
-
-	</header>
+</header>

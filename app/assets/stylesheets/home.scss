@@ -1,4 +1,18 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+.demo-card-wide.mdl-card {
+  width: 100%;
+  background-color: #000;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  width: 20%;
+  background-color: #f11;
+}
+.demo-card-wide > .mdl-card__supporting-text {
+  color: #fff;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
